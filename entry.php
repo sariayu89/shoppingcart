@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -20,16 +22,16 @@
 			<h2>商品検索 - カテゴリ選択</h2>
 			<p>商品カテゴリを選択して［検索］ボタンをクリックしてください。</p>
 			<p>カテゴリを選択しなかった場合は、全件検索が実施されすべての商品が表示されます。</p>
-			<form action="result.html" method="get">
+			<form action="result.php" method="get">
 				<table class="borderless">
 					<tr>
 						<td>
 							<input type="radio" name="category" value="book" id="book" checked />
-							<label for="book">書籍</label>
+							<label for="book"><a href="result.php" ">書籍</label>
 						</td>
 						<td>
 							<input type="radio" name="category" value="dvd" id="dvd" />
-							<label for="dvd">DVD</label>
+							<label for="dvd"><a href="dvd.php" target="_blank" title="Click ">DVD</label>
 						</td>
 						<td>
 							<input type="submit" value="検索" />
@@ -39,11 +41,9 @@
 			</form>
 		</article>
 	</main>
-
 	<footer>
 		<div id="copyright">(C) 2019 The Advanced Course on Web System Development</div>
 	</footer>
 	
 </body>
-
 </html>
